@@ -1,3 +1,5 @@
+import Galeria from "@/components/secciones/Galeria";
+
 export default function Home() {
   return (
 
@@ -15,6 +17,8 @@ export default function Home() {
             Multiclinic2
           </h2>
         </section>
+
+        <Galeria/>
 
       </div>
     </main>
