@@ -3,7 +3,7 @@ import Galeria from "@/components/secciones/Galeria";
 export default function Home() {
   return (
 
-    <main className="flex flex-col justify-center items-center w-full h-auto bg-blue-700">
+    <main className="flex flex-col justify-center items-center w-full h-auto bg-segundario">
       <div className="flex flex-col max-w-5xl">
 
         <section className="flex justify-center items-center w-full h-screen">
