@@ -1,4 +1,5 @@
 import Banner from "@/components/bannerppl/page";
+import Profesionales from "@/components/profesionales/page";
 import Galeria from "@/components/secciones/Galeria";
 import Services from "@/components/servicios/page";
 import Image from "next/image";
@@ -17,6 +18,10 @@ export default function Home() {
         <section className="flex relative w-full h-screen justify-center items-center">
           <Image src={'/images/sala1.jpg'} alt="fondo hondas" width={1920} height={1800} className="absolute top-0 flex w-full h-full object-cover bg-no-repeat bg-center -z-10" />
           <Services />
+        </section>
+
+        <section className="flex relative w-full h-screen justify-center items-center">
+          <Profesionales />
         </section>
 
         <Galeria/>
