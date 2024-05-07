@@ -1,3 +1,4 @@
+import Banner from "@/components/bannerppl/page";
 import Galeria from "@/components/secciones/Galeria";
 
 export default function Home() {
@@ -7,9 +8,7 @@ export default function Home() {
       <div className="flex flex-col max-w-5xl">
 
         <section className="flex justify-center items-center w-full h-screen">
-          <h1 className="text-4xl font-bold text-center">
-            Multiclinic1
-          </h1>
+          <Banner />
         </section>
         
         <section className="flex justify-center items-center w-full h-screen">
