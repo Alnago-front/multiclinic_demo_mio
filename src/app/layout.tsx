@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Unica_One } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar/page";
 import Footer from "@/components/footer/page";
+import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
+const unica_one = Unica_One({ preload: false, weight: '400' });
 
 export const metadata: Metadata = {
   title: "Multiclinic",
@@ -19,9 +22,19 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
+
         <NavBar />
-          {children}
+
+        {children}
+
+        <div className="fixed right-0 bottom-0 flex w-24 p-4 hover:drop-shadow-lg hover:scale-95">
+          <Link href={'/'}>
+            <Image src={'/icons/whatsapp.svg'} alt="logo whatsapp" width={256} height={259} />
+          </Link>
+        </div>
+
         <Footer />
+
       </body>
     </html>
   );

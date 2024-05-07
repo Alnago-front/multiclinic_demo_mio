@@ -4,26 +4,15 @@ import Link from "next/link";
 export default function NavBar() {
   return (
 
-    <header className="fixed flex justify-center items-center w-full h-18 bg-white">
-      <div className="flex justify-between items-center max-w-5xl w-full">
+    <nav className="flex absolute justify-center items-center z-10 w-full h-18 bg-gradient-to-b from-black">
 
-        <div>
+        <div className="flex justify-center w-full h-3/6 max-w-5xl">
           <Link href={'/'}>
-            <Image src="/logos/multiclinic.png" alt="Logo de multiclinic" width={2911} height={883} className="w-36 h-auto" />
+            <Image src="/logos/multiclinic.png" alt="Logo de multiclinic" width={2911} height={883} className="w-96 h-auto" />
           </Link>
         </div>
-        
-        <div>
-          <nav className="flex gap-2 p-4">
-            <Link href={'/'} >Opción 1</Link>
-            <Link href={'/'} >Opción 2</Link>
-            <Link href={'/'} >Opción 3</Link>
-            <Link href={'/'} >Opción 4</Link>
-          </nav>
-        </div>
 
-      </div>
-    </header>
+    </nav>
 
   )
 }
