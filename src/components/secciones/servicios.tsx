@@ -38,8 +38,8 @@ export default function Services() {
   ]
 
   return (
-    <div className="flex justify-around w-full h-5/6 p-6">
-      <div className="flex w-full h-auto justify-between items-center max-w-5xl flex-col">
+    <div className="flex justify-around w-full h-5/6 tablet:p-6 mobile:p-0">
+      <div className="flex w-full h-auto justify-between items-center max-w-5xl flex-col gap-9">
 
         <div className={` ${'text-7xl text-ebrima'}`}>
           <h1>Servicios</h1>
@@ -50,7 +50,7 @@ export default function Services() {
           {
             servicios.map((servicio) => {
               return (
-                <div key={servicio.name} className="flex relative w-48 h-48 items-center justify-center group">
+                <div key={servicio.name} className="flex relative mobile:w-40 mobile:h-40 tablet:w-48 tablet:h-48 items-center justify-center group">
                   <Image src={servicio.img} alt={servicio.name} width={400} height={400} className="w-full h-full cursor-pointer group-hover:scale-110 ease-in duration-200" />
                   <p className={`${'flex absolute w-full h-full justify-center items-center opacity-0 group-hover:opacity-100'}`}>{servicio.name}</p>
                 </div>

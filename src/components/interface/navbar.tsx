@@ -16,7 +16,7 @@ export default function NavBar() {
 
         <div className="place-content-center py-5">
           <ul className="grid grid-cols-3">
-            <li className="text-white text-center"><Link href={'/'}>Servicios</Link></li>
+            <li className="text-white text-center"><Link href={'/servicios/'}>Servicios</Link></li>
             <li className="text-white text-center"><Link href={'/'}>Quienes somos</Link></li>
             <li className="text-white text-center"><Link href={'/'}>Contacto</Link></li>
           </ul>

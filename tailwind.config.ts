@@ -40,7 +40,7 @@ const config: Config = {
       "fuchsia": colors.fuchsia,
     },
     screens: {
-      'mobile': '440px',
+      'mobile': '380px',
       // => @media (min-width: 440px) { ... }
 
       'tablet': '640px',

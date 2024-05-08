@@ -19,7 +19,7 @@ export default function Home() {
           <Services />
         </section>
 
-        <section className="flex relative w-full h-screen justify-center items-center">
+        <section className="flex relative w-full min-h-screen h-auto justify-center items-center">
           <Profesionales />
         </section>
 
