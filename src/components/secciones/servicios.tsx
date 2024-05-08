@@ -1,4 +1,4 @@
-import { unica_one } from "@/ui/fonts";
+import { imprima, unica_one } from "@/app/ui/fonts";
 import { Unica_One } from "next/font/google";
 import Image from "next/image";
 
@@ -52,9 +52,9 @@ export default function Services() {
           {
             servicios.map((servicio) => {
               return (
-                <div key={servicio.name} className="flex relative w-40 h-40 items-center justify-center group">
-                  <Image src={servicio.img} alt={servicio.name} width={400} height={400} className="w-40 h-40 cursor-pointer group-hover:scale-110 ease-in duration-200" />
-                  <p className="flex absolute w-full h-full justify-center items-center opacity-0 group-hover:opacity-100">{servicio.name}</p>
+                <div key={servicio.name} className="flex relative w-48 h-48 items-center justify-center group">
+                  <Image src={servicio.img} alt={servicio.name} width={400} height={400} className="w-full h-full cursor-pointer group-hover:scale-110 ease-in duration-200" />
+                  <p className={`${'flex absolute w-full h-full justify-center items-center opacity-0 group-hover:opacity-100'} ${imprima.className}`}>{servicio.name}</p>
                 </div>
 
               )

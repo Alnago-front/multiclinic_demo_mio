@@ -1,7 +1,7 @@
-import Banner from "@/components/bannerppl/page";
-import Profesionales from "@/components/profesionales/page";
 import Galeria from "@/components/secciones/Galeria";
-import Services from "@/components/servicios/page";
+import Banner from "@/components/secciones/banner";
+import Profesionales from "@/components/secciones/profesionales";
+import Services from "@/components/secciones/servicios";
 import Image from "next/image";
 
 export default function Home() {
