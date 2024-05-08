@@ -13,12 +13,7 @@ const Galeria = () => {
               <Image src={foto} alt={'doctor imagen'} className="w-1/5"/>
               <Image src={foto} alt={'doctor imagen'} className="w-1/5"/>
               <Image src={foto} alt={'doctor imagen'} className="w-1/5"/>
-              <div className="w-full h-screen bg-my-image bg-cover bg-no-repeat relative">
-                <p className='w-full h-64 absolute top-0 opacity-0 hover:opacity-100'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                  Perspiciatis laboriosam quos quas enim fuga in, pariatur placeat 
-                  eos quod natus laudantium quae optio delectus dolore odio tenetur porro? Unde, odit?
-                </p>
-              </div>
+              
     </div>
   )
 }
