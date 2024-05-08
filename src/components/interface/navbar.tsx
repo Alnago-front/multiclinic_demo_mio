@@ -10,13 +10,13 @@ export default function NavBar() {
 
         <div className="grid mobile:place-content-center">
           <Link href={'/'}>
-            <Image src="/logos/multiclinic.png" alt="Logo de multiclinic" width={2911} height={883} className="w-96 h-auto" />
+            <Image src="/logos/multiclinic.png" alt="Logo de multiclinic" width={2911} height={883} className="w-96 h-auto" priority/>
           </Link>
         </div>
 
         <div className="place-content-center py-5">
           <ul className="grid grid-cols-3">
-            <li className="text-white text-center"><Link href={'/servicios/'}>Servicios</Link></li>
+            <li className="text-white text-center"><Link href={'/'}>Servicios</Link></li>
             <li className="text-white text-center"><Link href={'/'}>Quienes somos</Link></li>
             <li className="text-white text-center"><Link href={'/'}>Contacto</Link></li>
           </ul>

@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Home() {
   return (
 
-    <main className="flex flex-col justify-center items-center w-full h-auto">
+    <main className="w-full h-auto">
       <div className="flex flex-col w-full h-auto">
 
         <section className="flex w-full h-screen bg-[url('/images/multiclinic.jpg')] bg-no-repeat bg-cover">

@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Services() {
 
@@ -49,11 +52,22 @@ export default function Services() {
 
           {
             servicios.map((servicio) => {
+              var valor = (Math.random() * (1 - 0)).toFixed(1);
               return (
-                <div key={servicio.name} className="flex relative mobile:w-40 mobile:h-40 tablet:w-48 tablet:h-48 items-center justify-center group">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: valor,
+                    delay: parseFloat(valor),
+                    ease: [0, 0.71, 0.2, 1.01]
+                  }}
+                  key={servicio.name}
+                  className="flex relative mobile:w-40 mobile:h-40 tablet:w-48 tablet:h-48 items-center justify-center group"
+                >
                   <Image src={servicio.img} alt={servicio.name} width={400} height={400} className="w-full h-full cursor-pointer group-hover:scale-110 ease-in duration-200" />
                   <p className={`${'flex absolute w-full h-full justify-center items-center opacity-0 group-hover:opacity-100'}`}>{servicio.name}</p>
-                </div>
+                </motion.div>
 
               )
             })
