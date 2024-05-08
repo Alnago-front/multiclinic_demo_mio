@@ -1,5 +1,4 @@
 import { imprima, unica_one } from "@/app/ui/fonts";
-import { Unica_One } from "next/font/google";
 import Image from "next/image";
 
 export default function Services() {
@@ -47,7 +46,7 @@ export default function Services() {
           <h1>Servicios</h1>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 place-content-around place-items-center w-full">
+        <div className="grid grid-cols-4 gap-4 place-content-around place-items-center lg:w-full">
 
           {
             servicios.map((servicio) => {
