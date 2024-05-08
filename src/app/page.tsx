@@ -15,7 +15,7 @@ export default function Home() {
           <Banner />
         </section>
         
-        <section className="flex relative w-full h-screen justify-center items-center bg-[url('/images/sala1.jpg')] bg-no-repeat bg-cover">
+        <section className="flex relative w-full h-auto min-h-screen justify-center items-center bg-[url('/images/sala1.jpg')] bg-no-repeat bg-cover">
           <Services />
         </section>
 

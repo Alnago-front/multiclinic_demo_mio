@@ -4,7 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/interface/navbar";
 import Footer from "@/components/interface/footer";
+import local from 'next/font/local';
 
+const ebrima = local({
+  src: [
+    {
+      path: '../../public/fonts/Ebrima.ttf',
+      weight: '400',
+    },
+  ],
+  variable: '--font-ebrima',
+}); 
 
 export const metadata: Metadata = {
   title: "Multiclinic",
@@ -18,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>
+      <body className={`${ebrima.className}`}>
 
         <NavBar />
 
