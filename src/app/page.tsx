@@ -1,4 +1,5 @@
 import Galeria from "@/components/secciones/Galeria";
+import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
 import Profesionales from "@/components/secciones/profesionales";
 import Services from "@/components/secciones/servicios";
@@ -25,6 +26,7 @@ export default function Home() {
         </section>
 
         <Galeria/>
+        <Cita/>
 
       </div>
     </main>
