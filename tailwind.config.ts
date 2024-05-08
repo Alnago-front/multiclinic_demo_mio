@@ -17,8 +17,8 @@ const config: Config = {
       },
     },
     colors:{
-      "principal":"#00a8ec",
-      "segundario":"#0769b2",
+      "principal":"#009cde",
+      "segundario":"#407EC9",
       "black": colors.black,
       "white": colors.white,
       "gray": colors.gray,
