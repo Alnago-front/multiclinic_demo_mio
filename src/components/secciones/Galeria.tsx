@@ -33,7 +33,7 @@ const Galeria = () => {
 
 
   return (
-    <div className="flex flex-col justify-center gap-10 w-full box-border bg-segundario overflow-x-hidden p-10" ref={containerRef}>
+    <div className="flex flex-col justify-center gap-10 w-full box-border p-10" ref={containerRef}>
 
               <motion.div style={{translateX: primeraFila}} className='w-full flex justify-center gap-10'>
                 <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl hover:border-4 border-gray-500"/>

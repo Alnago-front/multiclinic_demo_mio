@@ -1,9 +1,9 @@
 import Galeria from "@/components/secciones/Galeria";
 import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
-import Profesionales from "@/components/secciones/profesionales";
 import Services from "@/components/secciones/servicios";
 import Image from "next/image";
+import Profesionales from "@/components/secciones/Profesionales";
 
 export default function Home() {
   return (
