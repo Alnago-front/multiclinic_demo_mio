@@ -4,7 +4,7 @@ import foto from '../../../public/imagenes/4.png';
 import foto2 from '../../../public/imagenes/5.png';
 import foto3 from '../../../public/imagenes/6.png';
 import foto4 from '../../../public/imagenes/7.png';
-
+import FlipCart from './FlipCart'
 
 
 export default function Profesionales() {
@@ -16,6 +16,7 @@ export default function Profesionales() {
                 <div className='flex flex-col gap-20'>
                   <div className='flex items-end justify-center h-60 w-72 bg-principal rounded-3xl hover:bg-segundario'>
                     <Image src={foto} alt={'doctor imagen'} className='h-80'/>
+                    <FlipCart/>
                   </div>
                   <div className='flex items-end justify-center h-60 w-72 bg-principal hover:bg-segundario rounded-3xl '>
                     <Image src={foto3} alt={'doctor imagen'} className='h-80 w-60'/>
