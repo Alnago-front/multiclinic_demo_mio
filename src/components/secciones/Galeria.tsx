@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
+import FlipCart from "./FlipCart"
 import foto from '../../../public/imagenes/2.jpg'
 import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
 
@@ -36,16 +37,17 @@ const Galeria = () => {
     <div className="flex flex-col justify-center gap-10 w-full box-border p-10" ref={containerRef}>
 
               <motion.div style={{translateX: primeraFila}} className='w-full flex justify-center gap-10'>
-                <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl hover:border-4 border-gray-500"/>
-                <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl hover:border-4 border-gray-500"/>
-                <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl"/>           
+        
+                <FlipCart/>
+                <FlipCart/>  
+                <FlipCart/>         
                 
               </motion.div>
 
               <motion.div style={{translateX: segundaFila}} className='w-full flex justify-center gap-10'>
-                <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl hover:border-4 border-gray-500"/>
-                <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl hover:border-4 border-gray-500"/>
-                <Image src={foto} alt={'doctor imagen'} className="w-1/5 rounded-3xl"/>           
+              <FlipCart/>
+              <FlipCart/>  
+              <FlipCart/>             
                 
               </motion.div>
                
