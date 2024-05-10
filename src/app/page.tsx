@@ -2,7 +2,6 @@ import Galeria from "@/components/secciones/Galeria";
 import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
 import Services from "@/components/secciones/servicios";
-import Image from "next/image";
 import Profesionales from "@/components/secciones/Profesionales";
 
 export default function Home() {
@@ -19,10 +18,7 @@ export default function Home() {
           <Services />
         </section>
 
-        <section className="flex relative w-full min-h-screen h-auto justify-center items-center">
-          <Profesionales />
-        </section>
-
+        <Profesionales />
         <Galeria/>
         <Cita/>
 

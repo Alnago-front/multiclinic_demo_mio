@@ -32,25 +32,20 @@ const Galeria = () => {
     }
   })
 
-
   return (
     <div className="flex flex-col justify-center gap-10 w-full box-border p-10" ref={containerRef}>
 
               <motion.div style={{translateX: primeraFila}} className='w-full flex justify-center gap-10'>
-        
                 <FlipCart/>
                 <FlipCart/>  
-                <FlipCart/>         
-                
+                <FlipCart/>    
               </motion.div>
 
               <motion.div style={{translateX: segundaFila}} className='w-full flex justify-center gap-10'>
-              <FlipCart/>
-              <FlipCart/>  
-              <FlipCart/>             
-                
-              </motion.div>
-               
+                <FlipCart/>
+                <FlipCart/>  
+                <FlipCart/>             
+              </motion.div> 
     </div>
   )
 }
