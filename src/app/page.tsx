@@ -2,7 +2,7 @@ import Galeria from "@/components/secciones/Galeria";
 import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
 import Services from "@/components/secciones/servicios";
-import Profesionales from "@/components/secciones/Profesionales";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,11 +14,14 @@ export default function Home() {
           <Banner />
         </section>
         
-        <section className="flex relative w-full h-auto min-h-screen justify-center items-center bg-[url('/images/sala1.jpg')] bg-no-repeat bg-cover">
+        <section className="flex w-full h-auto min-h-screen justify-center items-center bg-[url('/images/sala1.jpg')] bg-no-repeat bg-cover">
           <Services />
         </section>
 
-        <Profesionales />
+        <section className="flex relative w-full min-h-screen h-auto justify-center items-center">
+          <Profesionales />
+        </section>
+
         <Galeria/>
         <Cita/>
 
