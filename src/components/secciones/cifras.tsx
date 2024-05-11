@@ -8,12 +8,20 @@ export default function Cifras() {
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope)
 
-  const count = useMotionValue(100);
+  const count = useMotionValue(0);
   const pacients = useTransform(count, Math.round);
+  
+  const yearCount = useMotionValue(0);
+  const years = useTransform(yearCount, Math.round);
+
+  const certsCount = useMotionValue(0);
+  const certs = useTransform(certsCount, Math.round);
   
   useEffect(() => {
     if (isInView) {
-      const pacients = animate(count, 5000, { duration: 2 });
+      const pacients = animate(count, 5000, { duration: 2.5 });
+      const years = animate(yearCount, 2, { duration: 2.5 });
+      const certts = animate(certsCount, 8, { duration: 2.5 });
     }
   })
 
@@ -25,12 +33,12 @@ export default function Cifras() {
           <h1 className='text-3xl'>CIFRAS</h1>
         </div>
 
-        <div className="w-full h-auto grid tablet:grid-cols-4 mobile:grid-cols-2 mobile:gap-5 place-items-center">
+        <div ref={scope} className="w-full h-auto grid tablet:grid-cols-4 mobile:grid-cols-2 mobile:gap-5 place-items-center">
           <div>
             <p className='text-white text-2xl'>PACIENTES</p>
             <div className='flex'>
               <p className='text-white text-2xl'>+</p>
-              <motion.p ref={scope} className='text-3xl'>{pacients}</motion.p>
+              <motion.p className='text-3xl'>{pacients}</motion.p>
             </div>
           </div>
           <div>
@@ -41,12 +49,12 @@ export default function Cifras() {
             <p className='text-white text-2xl'>AÑOS</p>
             <div className='flex'>
               <p className='text-white text-2xl'>+</p>
-              <motion.p className='text-3xl'></motion.p>
+              <motion.p className='text-3xl'>{years}</motion.p>
             </div>
           </div>
           <div>
             <p className='text-white text-2xl'>CERTIFICADOS</p>
-            <p className='text-3xl'>6</p>
+            <motion.p className='text-3xl'>{certs}</motion.p>
           </div>
         </div>
 

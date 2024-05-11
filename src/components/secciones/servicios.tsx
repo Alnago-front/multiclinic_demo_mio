@@ -52,7 +52,7 @@ export default function Services() {
 
           {
             servicios.map((servicio) => {
-              var valor = (Math.random() * (0.8 - 0.2)).toFixed(1);
+              let valor = (Math.random() * (0.8 - 0.2)).toFixed(1);
               return (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
