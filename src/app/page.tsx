@@ -3,6 +3,7 @@ import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
 import Services from "@/components/secciones/servicios";
 import Profesional from "@/components/secciones/Profesional";
+import Cifras from "@/components/secciones/cifras";
 
 export default function Home() {
   return (
@@ -18,7 +19,14 @@ export default function Home() {
           <Services />
         </section>
 
-        <Profesional />
+        <section className="flex w-full min-h-screen h-auto justify-center items-center">
+          <Profesional />
+        </section>
+
+        <section className="w-full min-h-56 h-auto flex flex-col justify-center items-center bg-principal">
+          <Cifras />
+        </section>
+
         <Galeria/>
         <Cita/>
 
