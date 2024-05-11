@@ -3,6 +3,7 @@ import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
 import Services from "@/components/secciones/servicios";
 import Profesionales from "@/components/secciones/Profesionales";
+import Profesional from "@/components/secciones/Profesional";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
           <Services />
         </section>
 
-        <Profesionales />
+        <Profesional />
         <Galeria/>
         <Cita/>
 

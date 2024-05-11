@@ -3,7 +3,7 @@ import Image from 'next/image';
 import foto from '../../../public/imagenes/2.jpg';
 const FlipCart = () => {
     return (
-        <div className='group h-96 w-96 [perspective:1000px]'>
+        <div className='group h-64 w-64 [perspective:1000px]'>
             <div className='relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
                 <div className='absolute inset-0'>
                     <Image src={foto} alt={'doctor imagen'} className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" />
