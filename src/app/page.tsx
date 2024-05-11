@@ -2,7 +2,12 @@ import Galeria from "@/components/secciones/Galeria";
 import Cita from "@/components/secciones/Cita";
 import Banner from "@/components/secciones/banner";
 import Services from "@/components/secciones/servicios";
+<<<<<<< HEAD
+import Profesionales from "@/components/secciones/Profesionales";
+import Profesional from "@/components/secciones/Profesional";
+=======
 import Image from "next/image";
+>>>>>>> ab4ba7428ebc94d2b7da4831732200defb46491e
 
 export default function Home() {
   return (
@@ -18,10 +23,14 @@ export default function Home() {
           <Services />
         </section>
 
+<<<<<<< HEAD
+        <Profesional />
+=======
         <section className="flex relative w-full min-h-screen h-auto justify-center items-center">
           <Profesionales />
         </section>
 
+>>>>>>> ab4ba7428ebc94d2b7da4831732200defb46491e
         <Galeria/>
         <Cita/>
 
