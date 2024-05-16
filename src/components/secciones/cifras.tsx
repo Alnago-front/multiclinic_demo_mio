@@ -22,6 +22,7 @@ export default function Cifras() {
       const pacients = animate(count, 5000, { duration: 2.5 });
       const years = animate(yearCount, 2, { duration: 2.5 });
       const certts = animate(certsCount, 8, { duration: 2.5 });
+      stop
     }
   })
 
