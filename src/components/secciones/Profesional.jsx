@@ -8,25 +8,25 @@ const profes = [
     {
       "name": "DRA. ISABEL URIBE",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti ipsam,",
-      "img": "/imagenes/4.png",
+      "img": "/imagenes/2.jpg",
       "id":"1",
     },
     {
         "name": "DR. LUIS G. FIGUEROA R.",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti ipsam,",
-        "img": "/imagenes/5.png",
+        "img": "/imagenes/2.jpg",
         "id":"2",
     },
     {
         "name": "DR. LUIS MILLÁN",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti ipsam,",
-        "img": "/imagenes/6.png",
+        "img": "/imagenes/2.jpg",
         "id":"3",
     },
     {
         "name": "DR. LUIS G. FIGUEROA R.",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa deleniti ipsam,",
-        "img": "/imagenes/7.png",
+        "img": "/imagenes/2.jpg",
         "id":"4",
     },
     {
@@ -39,7 +39,7 @@ const profes = [
 
 const Profesional = () => {
   return (
-    <div className='flex flex-wrap gap-10 w-full justify-center p-16'>
+    <div className='flex flex-wrap justify-center w-full m-10 p-10'>
         {
             profes.map((profe)=>{
                 
@@ -53,13 +53,12 @@ const Profesional = () => {
                         initial="hidden"
                         whileInView="visible"
                         transition={{duration: 1, delay:0.25}}
-                        className='border border-principal flex flex-wrap gap-10 justify-center rounded-2xl'
-                        >
-                            <div className='flex flex-col justify-center items-center w-1/3 '>
-                                <Image src={profe.img} width={200} height={250} alt={profe.name}/>
-                                <p>{profe.name}</p>
-                                <p>{profe.description}</p>
-                            </div>
+                        className=' flex flex-col items-center justify-center rounded-2xl p-5' >
+                            
+                                <Image src={profe.img} width={300} height={350} alt={profe.name} className='rounded-2xl'/>
+                                <p className='tracking-widest font-bold w-[300px]'>{profe.name}</p>
+                                <p className='w-[300px]'>{profe.description}</p>
+                            
                         </motion.div>
                     
                 )
