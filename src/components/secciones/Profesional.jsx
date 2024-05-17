@@ -39,7 +39,7 @@ const profes = [
 
 const Profesional = () => {
   return (
-    <div className='flex flex-wrap justify-center w-full m-10 p-10'>
+    <div className='flex flex-wrap justify-center w-full  p-10 bg-gradient-to-b from-sky-500 to-neutral-50'>
         {
             profes.map((profe)=>{
                 
@@ -53,10 +53,10 @@ const Profesional = () => {
                         initial="hidden"
                         whileInView="visible"
                         transition={{duration: 1, delay:0.25}}
-                        className=' flex flex-col items-center justify-center rounded-2xl p-5' >
+                        className='flex flex-col items-center justify-center rounded-2xl p-5 gap-5' >
                             
                                 <Image src={profe.img} width={300} height={350} alt={profe.name} className='rounded-2xl'/>
-                                <p className='tracking-widest font-bold w-[300px]'>{profe.name}</p>
+                                <p className='tracking-widest font-bold '>{profe.name}</p>
                                 <p className='w-[300px]'>{profe.description}</p>
                             
                         </motion.div>

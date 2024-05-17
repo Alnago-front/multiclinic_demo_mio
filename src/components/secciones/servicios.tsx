@@ -41,7 +41,7 @@ export default function Services() {
   ]
 
   return (
-    <div className="flex justify-around w-full h-5/6 tablet:p-6 mobile:p-0">
+    <div className="flex justify-around w-full h-5/6 tablet:p-6 mobile:p-0" id="Servicios">
       <div className="flex w-full h-auto justify-between items-center max-w-5xl flex-col gap-9">
 
         <div className={` ${'text-7xl text-ebrima'}`}>
