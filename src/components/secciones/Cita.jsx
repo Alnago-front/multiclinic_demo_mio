@@ -13,9 +13,12 @@ const Cita = () => {
 
                         AGENDA TU CITA CON NOSOTROS 
             </motion.p>
+            <motion.button  initial={{opacity: 0, x: -100}}
+                            whileInView={{ opacity: 1, x: 0}}
+                            transition={{ ease: "easeOut", duration: 1.3 }}
+                            className='text-xl text-white bg-principal rounded-xl p-3 hover:scale-105 hover:bg-segundario'>CLICK AQUI</motion.button>
         </div>
 
-            <button className='text-xl text-white bg-principal rounded-xl p-3 hover:p-5 hover:bg-segundario'>CLICK AQUI</button>
     </div>
   )
 }
