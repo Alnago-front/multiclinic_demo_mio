@@ -66,7 +66,7 @@ export default function Services() {
                   className="flex relative mobile:w-40 mobile:h-40 tablet:w-48 tablet:h-48 items-center justify-center group"
                 >
                   <Image src={servicio.img} alt={servicio.name} width={400} height={400} className="w-full h-full cursor-pointer group-hover:scale-110 ease-in duration-200" />
-                  <p className={`${'flex absolute w-full h-full justify-center items-center opacity-0 group-hover:opacity-100'}`}>{servicio.name}</p>
+                  <p className='flex absolute w-full h-full justify-center items-center opacity-0 group-hover:opacity-100 select-none'>{servicio.name}</p>
                 </motion.div>
 
               )

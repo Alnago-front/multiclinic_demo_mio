@@ -12,11 +12,11 @@ export default function Home() {
     <main className="w-full h-auto">
       <div className="flex flex-col w-full h-auto">
 
-        <section className="flex w-full h-screen bg-[url('/images/multiclinic.jpg')] bg-no-repeat bg-cover">
+        <section id="Banner" className="flex w-full h-screen bg-[url('/images/multiclinic.jpg')] bg-no-repeat bg-cover">
           <Banner />
         </section>
         
-        <section className="flex w-full h-auto min-h-screen justify-center items-center bg-[url('/images/sala1.jpg')] bg-no-repeat bg-cover">
+        <section id="Servicios" className="flex w-full h-auto min-h-screen justify-center items-center bg-[url('/images/sala1.jpg')] bg-no-repeat bg-cover">
           <Services />
         </section>
 
@@ -28,8 +28,13 @@ export default function Home() {
           <Cifras />
         </section>
 
-        <Galeria/>
-        <Cita/>
+        <section  id="Quienes" className="flex w-full h-auto justify-center items-center">
+          <Galeria />
+        </section>
+
+        <section className="flex w-full min-h-screen h-auto justify-center items-center">
+          <Cita />
+        </section>
 
       </div>
     </main>
