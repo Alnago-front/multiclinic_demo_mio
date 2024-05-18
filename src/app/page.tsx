@@ -32,7 +32,7 @@ export default function Home() {
           <Galeria />
         </section>
 
-        <section className="flex w-full min-h-screen h-auto justify-center items-center">
+        <section className="flex w-full h-auto justify-center items-center">
           <Cita />
         </section>
 
